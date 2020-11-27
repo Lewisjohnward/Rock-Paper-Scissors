@@ -5,16 +5,16 @@
     </head>
     <body>
         <script>
-            //make user selection case insensitive
-            // let player = .toLowerCase(prompt("Choose your weapon"));
 
             //player selection
             const playerSelection = "rock";
-
+            
+            //make user selection case insensitive
+            // let player = .toLowerCase(prompt("Choose your weapon"));
 
             const computerSelection = function computerPlay(){
                 //return Rock Paper Scissors
-                math.random()
+                return math.floor(math.random() * 6) + 1;
             }
                 
             function playRound(playerSelection, ComputerSelection){
